@@ -6,7 +6,7 @@ import "./App.css";
 
 const retrieveBooks = async (page, limit, search) => {
   const response = await axios.get(
-    `http://pihome.local:5384/books?page=${page}&limit=${limit}&search=${search}`,
+    `https://books.internal.thirdember.com/api/books?page=${page}&limit=${limit}&search=${search}`,
   );
   return response.data;
 };
